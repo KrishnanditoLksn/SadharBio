@@ -4,10 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
@@ -23,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.dito.sadhar_bio.R
 import app.dito.sadhar_bio.components.image_drawable.CustomImages
+import app.dito.sadhar_bio.ui.theme.md_theme_light_brown
 
 class CollegeHistoryActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,16 +42,18 @@ class CollegeHistoryActivity : ComponentActivity() {
 fun RedirectToMainMenu(appComponent: ComponentActivity, modifier: Modifier) {
     Column(
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = modifier.background(md_theme_light_brown)
     ) {
         CollegeHistoryContent(modifier = modifier)
         Text(
             text = "Ide untuk mendirikan Perguruan Tinggi Pendidikan Guru (PTPG) oleh Prof. Moh. Yamin, S.H. (Menteri Pendidikan, Pengajaran, dan Kebudayaan RI) pada tahun 1950-an disambut baik oleh para imam Katolik, terutama Ordo Societas Jesus (Serikat Yesus yang lazim disingkat S.J.). \nWaktu itu Ordo ini telah membuka kursus-kursus B1, \nantara lain B1 Mendidik (Yayasan De Britto) di Yogyakarta yang dikelola oleh Pater H. Loeff, S.J.\n dan B1 Bahasa Inggris (Yayasan Loyola) di Semarang yang dikelola oleh pater W.J. Van der Meulen, S.J. dan Pater H. Bastiaanse, S.J. ",
             fontSize = 20.sp,
             fontWeight = FontWeight(400),
-            color = Color(0xFF000000)
+            color = Color(0xFF000000),
+            modifier = modifier.padding(5.dp)
         )
-        Spacer(modifier = modifier.size(20.dp))
+        Spacer(modifier = modifier.size(4.5.dp))
         Button(
             onClick = {
                 Intent(appComponent.applicationContext, MainMenuActivity::class.java).apply {
@@ -64,7 +69,9 @@ fun RedirectToMainMenu(appComponent: ComponentActivity, modifier: Modifier) {
 fun CollegeHistoryContent(modifier: Modifier) {
     Column(
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = modifier.background(md_theme_light_brown)
+
     ) {
         Spacer(modifier = modifier.size(30.dp))
         Text(
