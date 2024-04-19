@@ -25,6 +25,9 @@
         <activity android:name=".activity.MainMenuActivity">
 
         </activity>
+        <activity android:name=".activity.CollegeHistoryActivity">
+
+        </activity>
     </application>
 
 </manifest>

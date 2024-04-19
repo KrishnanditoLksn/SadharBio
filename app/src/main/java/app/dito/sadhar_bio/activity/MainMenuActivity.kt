@@ -45,7 +45,9 @@ fun RedirectToHome(appComponent: ComponentActivity, modifier: Modifier) {
         Spacer(modifier = modifier.size(550.dp))
         Button(
             onClick = {
-
+                Intent(appComponent.applicationContext, CollegeHistoryActivity::class.java).apply {
+                    appComponent.startActivity(this)
+                }
             },
             modifier = modifier
                 .size(width = 335.dp, height = 40.dp),
