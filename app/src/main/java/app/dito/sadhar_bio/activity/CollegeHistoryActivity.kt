@@ -25,7 +25,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.dito.sadhar_bio.R
 import app.dito.sadhar_bio.components.image_drawable.CustomImages
-import app.dito.sadhar_bio.ui.theme.md_theme_light_brown
+import app.dito.sadhar_bio.ui.theme.md_theme_dark_inversePrimary
+import app.dito.sadhar_bio.ui.theme.md_theme_dark_onPrimary
 
 class CollegeHistoryActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,7 +44,7 @@ fun RedirectToMainMenu(appComponent: ComponentActivity, modifier: Modifier) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = modifier.background(md_theme_light_brown)
+        modifier = modifier.background(md_theme_dark_inversePrimary)
     ) {
         CollegeHistoryContent(modifier = modifier)
         Text(
@@ -70,7 +71,7 @@ fun CollegeHistoryContent(modifier: Modifier) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = modifier.background(md_theme_light_brown)
+        modifier = modifier.background(md_theme_dark_onPrimary)
 
     ) {
         Spacer(modifier = modifier.size(30.dp))
