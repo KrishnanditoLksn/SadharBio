@@ -19,7 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import app.dito.sadhar_bio.Model.Chancellor
+import app.dito.sadhar_bio.model.Chancellor
 import app.dito.sadhar_bio.data.ChancelListDatas
 
 class ChancellorListActivity : ComponentActivity() {

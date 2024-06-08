@@ -1,6 +1,6 @@
 package app.dito.sadhar_bio.data
 
-import app.dito.sadhar_bio.Model.Chancellor
+import app.dito.sadhar_bio.model.Chancellor
 
 class ChancelListDatas {
     val callis = listOf(
