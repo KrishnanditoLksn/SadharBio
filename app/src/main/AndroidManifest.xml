@@ -28,6 +28,9 @@
         <activity android:name=".activity.CollegeHistoryActivity">
 
         </activity>
+        <activity android:name=".activity.ChancellorListActivity">
+
+        </activity>
     </application>
 
 </manifest>
