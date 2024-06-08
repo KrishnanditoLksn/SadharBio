@@ -65,7 +65,9 @@ fun RedirectToHome(appComponent: ComponentActivity, modifier: Modifier) {
         Spacer(modifier = modifier.size(10.dp))
         Button(
             onClick = {
-
+                Intent(appComponent.applicationContext, ChancellorListActivity::class.java).apply {
+                    appComponent.startActivity(this)
+                }
             },
             modifier = modifier
                 .size(width = 335.dp, height = 40.dp),
@@ -82,6 +84,7 @@ fun RedirectToHome(appComponent: ComponentActivity, modifier: Modifier) {
                     appComponent.startActivity(this)
                 }
             },
+
             modifier = modifier
                 .size(width = 335.dp, height = 40.dp),
             colors = ButtonDefaults.buttonColors(
