@@ -1,4 +1,4 @@
-package app.dito.sadhar_bio.activity.Model
+package app.dito.sadhar_bio.Model
 
 data class Chancellor(
     val name: String,
